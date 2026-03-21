@@ -1,0 +1,401 @@
+question_id;question;question_type;answer;is_correct
+1;Which planet is closest to the Sun?;astronomy;Venus;False
+1;Which planet is closest to the Sun?;astronomy;Mercury;True
+1;Which planet is closest to the Sun?;astronomy;Earth;False
+1;Which planet is closest to the Sun?;astronomy;Mars;False
+2;Which planet is known as the Red Planet?;astronomy;Venus;False
+2;Which planet is known as the Red Planet?;astronomy;Mars;True
+2;Which planet is known as the Red Planet?;astronomy;Jupiter;False
+2;Which planet is known as the Red Planet?;astronomy;Saturn;False
+3;What is the speed of light?;astronomy;300,000 km/s;True
+3;What is the speed of light?;astronomy;150,000 km/s;False
+3;What is the speed of light?;astronomy;450,000 km/s;False
+3;What is the speed of light?;astronomy;600,000 km/s;False
+4;How many planets are in our Solar System?;astronomy;7;False
+4;How many planets are in our Solar System?;astronomy;8;True
+4;How many planets are in our Solar System?;astronomy;9;False
+4;How many planets are in our Solar System?;astronomy;10;False
+5;What is the largest planet in our Solar System?;astronomy;Jupiter;True
+5;What is the largest planet in our Solar System?;astronomy;Saturn;False
+5;What is the largest planet in our Solar System?;astronomy;Neptune;False
+5;What is the largest planet in our Solar System?;astronomy;Uranus;False
+6;Which planet has the most moons?;astronomy;Jupiter;False
+6;Which planet has the most moons?;astronomy;Saturn;True
+6;Which planet has the most moons?;astronomy;Uranus;False
+6;Which planet has the most moons?;astronomy;Neptune;False
+7;What is the name of our galaxy?;astronomy;Andromeda;False
+7;What is the name of our galaxy?;astronomy;Milky Way;True
+7;What is the name of our galaxy?;astronomy;Triangulum;False
+7;What is the name of our galaxy?;astronomy;Whirlpool;False
+8;What is a black hole?;astronomy;A star;False
+8;What is a black hole?;astronomy;A planet;False
+8;What is a black hole?;astronomy;A region of space;True
+8;What is a black hole?;astronomy;A galaxy;False
+9;What is the Earth's natural satellite?;astronomy;Moon;True
+9;What is the Earth's natural satellite?;astronomy;Phobos;False
+9;What is the Earth's natural satellite?;astronomy;Deimos;False
+9;What is the Earth's natural satellite?;astronomy;Titan;False
+10;What is a comet made of?;astronomy;Rock;False
+10;What is a comet made of?;astronomy;Ice;False
+10;What is a comet made of?;astronomy;Dust;False
+10;What is a comet made of?;astronomy;All of the above;True
+11;Which planet is farthest from the Sun?;astronomy;Uranus;False
+11;Which planet is farthest from the Sun?;astronomy;Neptune;True
+11;Which planet is farthest from the Sun?;astronomy;Pluto;False
+11;Which planet is farthest from the Sun?;astronomy;Saturn;False
+12;What causes the seasons on Earth?;astronomy;Distance from Sun;False
+12;What causes the seasons on Earth?;astronomy;Earth's tilt;True
+12;What causes the seasons on Earth?;astronomy;Rotation;False
+12;What causes the seasons on Earth?;astronomy;Revolution;False
+13;What is the brightest star in the night sky?;astronomy;Sirius;True
+13;What is the brightest star in the night sky?;astronomy;Vega;False
+13;What is the brightest star in the night sky?;astronomy;Arcturus;False
+13;What is the brightest star in the night sky?;astronomy;Rigel;False
+14;What is the name of the first artificial satellite?;astronomy;Sputnik;True
+14;What is the name of the first artificial satellite?;astronomy;Vostok;False
+14;What is the name of the first artificial satellite?;astronomy;Apollo;False
+14;What is the name of the first artificial satellite?;astronomy;Gemini;False
+15;Which planet rotates on its side?;astronomy;Venus;False
+15;Which planet rotates on its side?;astronomy;Uranus;True
+15;Which planet rotates on its side?;astronomy;Mars;False
+15;Which planet rotates on its side?;astronomy;Jupiter;False
+16;What is the Kuiper Belt?;astronomy;A belt of asteroids;False
+16;What is the Kuiper Belt?;astronomy;A belt of comets;True
+16;What is the Kuiper Belt?;astronomy;A ring around Saturn;False
+16;What is the Kuiper Belt?;astronomy;A galaxy;False
+17;What is the Oort Cloud?;astronomy;A cloud of gas;False
+17;What is the Oort Cloud?;astronomy;A cloud of comets;True
+17;What is the Oort Cloud?;astronomy;A nebula;False
+17;What is the Oort Cloud?;astronomy;A star cluster;False
+18;Which planet has a Great Red Spot?;astronomy;Mars;False
+18;Which planet has a Great Red Spot?;astronomy;Jupiter;True
+18;Which planet has a Great Red Spot?;astronomy;Saturn;False
+18;Which planet has a Great Red Spot?;astronomy;Neptune;False
+19;What is the temperature on the surface of Venus?;astronomy;Hot;True
+19;What is the temperature on the surface of Venus?;astronomy;Cold;False
+19;What is the temperature on the surface of Venus?;astronomy;Freezing;False
+19;What is the temperature on the surface of Venus?;astronomy;Boiling;False
+20;What is the name of the largest moon of Jupiter?;astronomy;Io;False
+20;What is the name of the largest moon of Jupiter?;astronomy;Europa;False
+20;What is the name of the largest moon of Jupiter?;astronomy;Ganymede;True
+20;What is the name of the largest moon of Jupiter?;astronomy;Callisto;False
+21;What is the capital of France?;geography;Paris;True
+21;What is the capital of France?;geography;London;False
+21;What is the capital of France?;geography;Berlin;False
+21;What is the capital of France?;geography;Madrid;False
+22;What is the largest ocean on Earth?;geography;Atlantic;False
+22;What is the largest ocean on Earth?;geography;Indian;False
+22;What is the largest ocean on Earth?;geography;Arctic;False
+22;What is the largest ocean on Earth?;geography;Pacific;True
+23;Which country is home to the Great Wall?;geography;Japan;False
+23;Which country is home to the Great Wall?;geography;China;True
+23;Which country is home to the Great Wall?;geography;Korea;False
+23;Which country is home to the Great Wall?;geography;Vietnam;False
+24;How many continents are there?;geography;5;False
+24;How many continents are there?;geography;6;False
+24;How many continents are there?;geography;7;True
+24;How many continents are there?;geography;8;False
+25;What is the capital of Japan?;geography;Osaka;False
+25;What is the capital of Japan?;geography;Tokyo;True
+25;What is the capital of Japan?;geography;Kyoto;False
+25;What is the capital of Japan?;geography;Yokohama;False
+26;In which country is the Eiffel Tower located?;geography;Italy;False
+26;In which country is the Eiffel Tower located?;geography;Spain;False
+26;In which country is the Eiffel Tower located?;geography;France;True
+26;In which country is the Eiffel Tower located?;geography;Germany;False
+27;What is the capital of Germany?;geography;Munich;False
+27;What is the capital of Germany?;geography;Hamburg;False
+27;What is the capital of Germany?;geography;Berlin;True
+27;What is the capital of Germany?;geography;Cologne;False
+28;What is the capital of Spain?;geography;Barcelona;False
+28;What is the capital of Spain?;geography;Madrid;True
+28;What is the capital of Spain?;geography;Seville;False
+28;What is the capital of Spain?;geography;Valencia;False
+29;What is the highest mountain in the world?;geography;Everest;True
+29;What is the highest mountain in the world?;geography;Kanchenjunga;False
+29;What is the highest mountain in the world?;geography;Lhotse;False
+29;What is the highest mountain in the world?;geography;Makalu;False
+30;In which ocean is Easter Island located?;geography;Pacific;True
+30;In which ocean is Easter Island located?;geography;Atlantic;False
+30;In which ocean is Easter Island located?;geography;Indian;False
+30;In which ocean is Easter Island located?;geography;Arctic;False
+31;What is the longest river in the world?;geography;Amazon;False
+31;What is the longest river in the world?;geography;Nile;True
+31;What is the longest river in the world?;geography;Yangtze;False
+31;What is the longest river in the world?;geography;Mississippi;False
+32;What is the capital of Australia?;geography;Sydney;False
+32;What is the capital of Australia?;geography;Melbourne;False
+32;What is the capital of Australia?;geography;Canberra;True
+32;What is the capital of Australia?;geography;Brisbane;False
+33;In which country is the Sahara Desert located?;geography;Egypt;False
+33;In which country is the Sahara Desert located?;geography;Libya;False
+33;In which country is the Sahara Desert located?;geography;Algeria;True
+33;In which country is the Sahara Desert located?;geography;Morocco;False
+34;What is the smallest continent?;geography;Europe;False
+34;What is the smallest continent?;geography;Australia;True
+34;What is the smallest continent?;geography;Africa;False
+34;What is the smallest continent?;geography;South America;False
+35;Which country has the largest land area?;geography;China;False
+35;Which country has the largest land area?;geography;Russia;True
+35;Which country has the largest land area?;geography;USA;False
+35;Which country has the largest land area?;geography;Canada;False
+36;What is the capital of Italy?;geography;Rome;True
+36;What is the capital of Italy?;geography;Milan;False
+36;What is the capital of Italy?;geography;Venice;False
+36;What is the capital of Italy?;geography;Florence;False
+37;In which country is Machu Picchu located?;geography;Peru;True
+37;In which country is Machu Picchu located?;geography;Bolivia;False
+37;In which country is Machu Picchu located?;geography;Chile;False
+37;In which country is Machu Picchu located?;geography;Argentina;False
+38;What is the deepest ocean?;geography;Atlantic;False
+38;What is the deepest ocean?;geography;Pacific;True
+38;What is the deepest ocean?;geography;Indian;False
+38;What is the deepest ocean?;geography;Arctic;False
+39;Which country is known as the Land of the Rising Sun?;geography;China;False
+39;Which country is known as the Land of the Rising Sun?;geography;Japan;True
+39;Which country is known as the Land of the Rising Sun?;geography;Korea;False
+39;Which country is known as the Land of the Rising Sun?;geography;Vietnam;False
+40;What is the capital of Brazil?;geography;Rio de Janeiro;False
+40;What is the capital of Brazil?;geography;Sao Paulo;False
+40;What is the capital of Brazil?;geography;Brasilia;True
+40;What is the capital of Brazil?;geography;Salvador;False
+41;In which year did World War II end?;history;1943;False
+41;In which year did World War II end?;history;1944;False
+41;In which year did World War II end?;history;1945;True
+41;In which year did World War II end?;history;1946;False
+42;Who was the first President of the United States?;history;George Washington;True
+42;Who was the first President of the United States?;history;Abraham Lincoln;False
+42;Who was the first President of the United States?;history;Thomas Jefferson;False
+42;Who was the first President of the United States?;history;John Adams;False
+43;When did the Berlin Wall fall?;history;1987;False
+43;When did the Berlin Wall fall?;history;1988;False
+43;When did the Berlin Wall fall?;history;1989;True
+43;When did the Berlin Wall fall?;history;1990;False
+44;Who wrote 'War and Peace'?;history;Dostoevsky;False
+44;Who wrote 'War and Peace'?;history;Tolstoy;True
+44;Who wrote 'War and Peace'?;history;Chekhov;False
+44;Who wrote 'War and Peace'?;history;Gogol;False
+45;In which century did the French Revolution occur?;history;17th;False
+45;In which century did the French Revolution occur?;history;18th;True
+45;In which century did the French Revolution occur?;history;19th;False
+45;In which century did the French Revolution occur?;history;20th;False
+46;What was the capital of the Roman Empire?;history;Athens;False
+46;What was the capital of the Roman Empire?;history;Carthage;False
+46;What was the capital of the Roman Empire?;history;Rome;True
+46;What was the capital of the Roman Empire?;history;Constantinople;False
+47;Who discovered America?;history;Columbus;True
+47;Who discovered America?;history;Magellan;False
+47;Who discovered America?;history;Vasco da Gama;False
+47;Who discovered America?;history;Cook;False
+48;When did the Cold War end?;history;1985;False
+48;When did the Cold War end?;history;1989;False
+48;When did the Cold War end?;history;1991;True
+48;When did the Cold War end?;history;1995;False
+49;In which year did World War I begin?;history;1912;False
+49;In which year did World War I begin?;history;1913;False
+49;In which year did World War I begin?;history;1914;True
+49;In which year did World War I begin?;history;1915;False
+50;Who wrote '1984'?;history;Orwell;True
+50;Who wrote '1984'?;history;Huxley;False
+50;Who wrote '1984'?;history;Bradbury;False
+50;Who wrote '1984'?;history;Vonnegut;False
+51;When was the October Revolution?;history;1915;False
+51;When was the October Revolution?;history;1917;True
+51;When was the October Revolution?;history;1919;False
+51;When was the October Revolution?;history;1921;False
+52;What was the name of the ship that carried the Pilgrims to America?;history;Santa Maria;False
+52;What was the name of the ship that carried the Pilgrims to America?;history;Mayflower;True
+52;What was the name of the ship that carried the Pilgrims to America?;history;Beagle;False
+52;What was the name of the ship that carried the Pilgrims to America?;history;Pinta;False
+53;In which year was the Declaration of Independence signed?;history;1774;False
+53;In which year was the Declaration of Independence signed?;history;1775;False
+53;In which year was the Declaration of Independence signed?;history;1776;True
+53;In which year was the Declaration of Independence signed?;history;1777;False
+54;Who was the first man to walk on the Moon?;history;Gagarin;False
+54;Who was the first man to walk on the Moon?;history;Armstrong;True
+54;Who was the first man to walk on the Moon?;history;Aldrin;False
+54;Who was the first man to walk on the Moon?;history;Collins;False
+55;When did the Renaissance begin?;history;14th century;True
+55;When did the Renaissance begin?;history;15th century;False
+55;When did the Renaissance begin?;history;16th century;False
+55;When did the Renaissance begin?;history;17th century;False
+56;What was the main cause of World War I?;history;Assassination;False
+56;What was the main cause of World War I?;history;Economic crisis;False
+56;What was the main cause of World War I?;history;Colonial rivalry;False
+56;What was the main cause of World War I?;history;All of the above;True
+57;Who painted the Mona Lisa?;history;Michelangelo;False
+57;Who painted the Mona Lisa?;history;Leonardo da Vinci;True
+57;Who painted the Mona Lisa?;history;Raphael;False
+57;Who painted the Mona Lisa?;history;Donatello;False
+58;In which year did the Titanic sink?;history;1910;False
+58;In which year did the Titanic sink?;history;1912;True
+58;In which year did the Titanic sink?;history;1914;False
+58;In which year did the Titanic sink?;history;1916;False
+59;What was the name of the first computer?;history;ENIAC;True
+59;What was the name of the first computer?;history;UNIVAC;False
+59;What was the name of the first computer?;history;Colossus;False
+59;What was the name of the first computer?;history;Harvard Mark I;False
+60;When was the Internet invented?;history;1960s;True
+60;When was the Internet invented?;history;1970s;False
+60;When was the Internet invented?;history;1980s;False
+60;When was the Internet invented?;history;1990s;False
+61;What is the chemical symbol for Gold?;science;Au;True
+61;What is the chemical symbol for Gold?;science;Ag;False
+61;What is the chemical symbol for Gold?;science;Gd;False
+61;What is the chemical symbol for Gold?;science;Go;False
+62;What is the smallest prime number?;science;0;False
+62;What is the smallest prime number?;science;1;False
+62;What is the smallest prime number?;science;2;True
+62;What is the smallest prime number?;science;3;False
+63;Which gas do plants absorb for photosynthesis?;science;Oxygen;False
+63;Which gas do plants absorb for photosynthesis?;science;Nitrogen;False
+63;Which gas do plants absorb for photosynthesis?;science;Carbon Dioxide;True
+63;Which gas do plants absorb for photosynthesis?;science;Hydrogen;False
+64;What is the largest mammal in the world?;science;Elephant;False
+64;What is the largest mammal in the world?;science;Whale;True
+64;What is the largest mammal in the world?;science;Giraffe;False
+64;What is the largest mammal in the world?;science;Hippopotamus;False
+65;How many sides does a hexagon have?;science;5;False
+65;How many sides does a hexagon have?;science;6;True
+65;How many sides does a hexagon have?;science;7;False
+65;How many sides does a hexagon have?;science;8;False
+66;What is the boiling point of water in Celsius?;science;90;False
+66;What is the boiling point of water in Celsius?;science;100;True
+66;What is the boiling point of water in Celsius?;science;110;False
+66;What is the boiling point of water in Celsius?;science;120;False
+67;Which element has atomic number 1?;science;Helium;False
+67;Which element has atomic number 1?;science;Hydrogen;True
+67;Which element has atomic number 1?;science;Lithium;False
+67;Which element has atomic number 1?;science;Beryllium;False
+68;How many strings does a violin have?;science;3;False
+68;How many strings does a violin have?;science;4;True
+68;How many strings does a violin have?;science;5;False
+68;How many strings does a violin have?;science;6;False
+69;What is DNA?;science;Protein;False
+69;What is DNA?;science;Acid;True
+69;What is DNA?;science;Gene;False
+69;What is DNA?;science;Cell;False
+70;What is the lightest element?;science;Hydrogen;True
+70;What is the lightest element?;science;Helium;False
+70;What is the lightest element?;science;Lithium;False
+70;What is the lightest element?;science;Beryllium;False
+71;What is photosynthesis?;science;Breathing;False
+71;What is photosynthesis?;science;Eating;False
+71;What is photosynthesis?;science;Converting light to energy;True
+71;What is photosynthesis?;science;Growth;False
+72;Which organ pumps blood?;science;Lungs;False
+72;Which organ pumps blood?;science;Liver;False
+72;Which organ pumps blood?;science;Heart;True
+72;Which organ pumps blood?;science;Brain;False
+73;What is a cell?;science;Organ;False
+73;What is a cell?;science;Tissue;False
+73;What is a cell?;science;Building block of life;True
+73;What is a cell?;science;Molecule;False
+74;Which gas do we exhale?;science;Oxygen;False
+74;Which gas do we exhale?;science;Carbon Dioxide;True
+74;Which gas do we exhale?;science;Nitrogen;False
+74;Which gas do we exhale?;science;Hydrogen;False
+75;What is gravity?;science;Force;False
+75;What is gravity?;science;Energy;False
+75;What is gravity?;science;Attraction;True
+75;What is gravity?;science;Motion;False
+76;What is the hardest metal?;science;Gold;False
+76;What is the hardest metal?;science;Iron;False
+76;What is the hardest metal?;science;Diamond;True
+76;What is the hardest metal?;science;Titanium;False
+77;What is a virus?;science;Bacteria;False
+77;What is a virus?;science;Cell;False
+77;What is a virus?;science;Microorganism;True
+77;What is a virus?;science;Protein;False
+78;What is an enzyme?;science;Protein;True
+78;What is an enzyme?;science;Acid;False
+78;What is an enzyme?;science;Gene;False
+78;What is an enzyme?;science;Virus;False
+79;What is the freezing point of water?;science;-10°C;False
+79;What is the freezing point of water?;science;0°C;True
+79;What is the freezing point of water?;science;10°C;False
+79;What is the freezing point of water?;science;20°C;False
+80;What is the speed of sound?;science;343 m/s;True
+80;What is the speed of sound?;science;300 m/s;False
+80;What is the speed of sound?;science;400 m/s;False
+80;What is the speed of sound?;science;500 m/s;False
+81;What does HTML stand for?;programming;Hyper Text Markup Language;True
+81;What does HTML stand for?;programming;High Tech Modern Language;False
+81;What does HTML stand for?;programming;Home Tool Markup Language;False
+81;What does HTML stand for?;programming;Hyperlinks and Text Markup Language;False
+82;Which programming language is known for web development?;programming;Python;False
+82;Which programming language is known for web development?;programming;Java;False
+82;Which programming language is known for web development?;programming;JavaScript;True
+82;Which programming language is known for web development?;programming;C++;False
+83;What does CSS stand for?;programming;Computer Style Sheets;False
+83;What does CSS stand for?;programming;Cascading Style Sheets;True
+83;What does CSS stand for?;programming;Creative Style System;False
+83;What does CSS stand for?;programming;Code Style Standard;False
+84;What is the main purpose of SQL?;programming;Create websites;False
+84;What is the main purpose of SQL?;programming;Manage databases;True
+84;What is the main purpose of SQL?;programming;Write applications;False
+84;What is the main purpose of SQL?;programming;Design graphics;False
+85;Which of these is a NoSQL database?;programming;MySQL;False
+85;Which of these is a NoSQL database?;programming;PostgreSQL;False
+85;Which of these is a NoSQL database?;programming;MongoDB;True
+85;Which of these is a NoSQL database?;programming;SQLite;False
+86;What does API stand for?;programming;Application Programming Interface;True
+86;What does API stand for?;programming;Automated Program Instruction;False
+86;What does API stand for?;programming;Application Process Integration;False
+86;What does API stand for?;programming;Advanced Programming Interface;False
+87;What is Git primarily used for?;programming;Web design;False
+87;What is Git primarily used for?;programming;Version control;True
+87;What is Git primarily used for?;programming;Database management;False
+87;What is Git primarily used for?;programming;Graphics editing;False
+88;Which language is used for iOS development?;programming;Kotlin;False
+88;Which language is used for iOS development?;programming;Java;False
+88;Which language is used for iOS development?;programming;Swift;True
+88;Which language is used for iOS development?;programming;C#;False
+89;What does JSON stand for?;programming;JavaScript Object Notation;True
+89;What does JSON stand for?;programming;Java Standard Object Network;False
+89;What does JSON stand for?;programming;JavaScript Open Network;False
+89;What does JSON stand for?;programming;Java Object Network Standard;False
+90;What is the main function of a firewall?;programming;Speed up internet;False
+90;What is the main function of a firewall?;programming;Block unauthorized access;True
+90;What is the main function of a firewall?;programming;Increase storage;False
+90;What is the main function of a firewall?;programming;Reduce latency;False
+91;Which framework is used with Python for web development?;programming;React;False
+91;Which framework is used with Python for web development?;programming;Vue;False
+91;Which framework is used with Python for web development?;programming;Django;True
+91;Which framework is used with Python for web development?;programming;Angular;False
+92;What does REST stand for in API design?;programming;Representational State Transfer;True
+92;What does REST stand for in API design?;programming;Remote Execution Server Technology;False
+92;What does REST stand for in API design?;programming;Reliable System Transfer;False
+92;What does REST stand for in API design?;programming;Resource Execution Service Type;False
+93;Which of these is a relational database?;programming;Firebase;False
+93;Which of these is a relational database?;programming;MongoDB;False
+93;Which of these is a relational database?;programming;MySQL;True
+93;Which of these is a relational database?;programming;CouchDB;False
+94;What is a merge conflict in Git?;programming;Connection issue;False
+94;What is a merge conflict in Git?;programming;Code duplication;False
+94;What is a merge conflict in Git?;programming;Incompatible changes from different branches;True
+94;What is a merge conflict in Git?;programming;Slow server;False
+95;What does XML stand for?;programming;eXtensible Markup Language;True
+95;What does XML stand for?;programming;eXternal Markup Link;False
+95;What does XML stand for?;programming;eXecutable Markup Language;False
+95;What does XML stand for?;programming;eXternal Modern Language;False
+96;Which company developed Java?;programming;Microsoft;False
+96;Which company developed Java?;programming;Apple;False
+96;Which company developed Java?;programming;Oracle;True
+96;Which company developed Java?;programming;Google;False
+97;What is the purpose of a loop in programming?;programming;Store data;False
+97;What is the purpose of a loop in programming?;programming;Repeat code blocks;True
+97;What is the purpose of a loop in programming?;programming;Display output;False
+97;What is the purpose of a loop in programming?;programming;Handle errors;False
+98;What does IDE stand for?;programming;Internet Development Environment;False
+98;What does IDE stand for?;programming;Integrated Development Environment;True
+98;What does IDE stand for?;programming;Interactive Design Engine;False
+98;What does IDE stand for?;programming;Independent Development Environment;False
+99;Which of these is a frontend framework?;programming;Express;False
+99;Which of these is a frontend framework?;programming;Flask;False
+99;Which of these is a frontend framework?;programming;Vue;True
+99;Which of these is a frontend framework?;programming;Django;False
+100;What is the main advantage of cloud computing?;programming;Lower cost;False
+100;What is the main advantage of cloud computing?;programming;Higher security;False
+100;What is the main advantage of cloud computing?;programming;Scalability and accessibility;True
+100;What is the main advantage of cloud computing?;programming;Faster processing;False

@@ -1,12 +1,49 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Flask Quiz</title>
-</head>
-<body>
-    <h1>Welcome to the Flask Quiz!</h1>
-    <p>Click the button below to start the quiz.</p>
-    <button>Start Quiz</button>
-</body>
+<html>
+
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Flask Quiz</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+
+    <body>
+        <div class = "background">
+            <header class = "header">
+                <div>
+                    <button class = "play-button" >Neues Spiel</button>
+                    <button class = "highscore-button" >Highscores</button>
+                </div>
+            </header>
+
+
+            <div class = "container">
+                <div class = "question-container">
+                    <p class = "question">Question</p>
+                </div>
+
+
+                <div class = "answer-container">
+                    <button class = "answer-button">Answer 1</button>
+                    <button class = "answer-button">Answer 2</button>
+                    <button class = "answer-button">Answer 3</button>
+                    <button class = "answer-button">Answer 4</button>
+                </div>
+
+
+                <div class = "points-container">
+                    <p class = "points-number">Points: 0</p>
+                </div>
+
+                
+                <div class = "result-container">
+                    <p class = "result-number">Question 1/10</p>
+                </div>
+            </div>
+        </div>
+    </body>
+
+
 </html>
