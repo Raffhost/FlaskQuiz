@@ -125,7 +125,7 @@ class Question:
         self.connection.commit()
 
 
-    def getQuestionByID(self, q_id):
+    def getQuestionById(self, q_id):
         self.connection = sqlite3.connect(self.db_name)
         cursor = self.connection.cursor()
 
@@ -152,18 +152,43 @@ class Question:
             answers=answers,
             is_correct=is_correct
         )
+
+
+    def getQuestionsByTypeId(self, q_type_id):
+        self.connection = sqlite3.connect(self.db_name)
+        cursor = self.connection.cursor()
+
+        # Load question type and question ids from database
+        cursor.execute('''SELECT question_id, question FROM question
+                       WHERE question_type_id = ?;''', (q_type_id,))
+        rows = cursor.fetchall()
+
+        if not rows:
+            return None
+
+        return "\n".join(f"{row[0]} {row[1]}" for row in rows)
+        
+    def createRandomOrder(self, q_type_id):
+        self.connection = sqlite3.connect(self.db_name)
+        cursor = self.connection.cursor()
+
+        cursor.execute('''SELECT question_id FROM question
+                       WHERE question_type_id = ?
+                       ORDER BY RANDOM();''', (q_type_id,))
+        random_order = cursor.fetchall()
+        
+        return random_order
+
     
 
-
-
-def main():
+def main(): # Create DB and load data
     q = Question(db_name='questions.db')
     q.createQuestionDB()
     q.loadQuestion('questions.csv')
     
-
-    # Test getQuestion
-    test_q = q.getQuestionByID(2)
+def test_1(): # Test for getQuestionById
+    q = Question(db_name='questions.db')
+    test_q = q.getQuestionById(2)
     if test_q:
         print(f"Question ID: {test_q.q_id}")
         print(f"Text: {test_q.q_text}")
@@ -173,8 +198,15 @@ def main():
     else:
         print("Question not found")
 
+def test_2(): # Test for getQuestionByTypeId
+    q = Question(db_name='questions.db')
+    test_q = q.getQuestionsByTypeId(3)
+    print(test_q)
+
+
 if __name__ == "__main__":
     main()
+    test_2()
 
 
 ### Need to add getQuestionByType and getRandomOrder or smth like that ###
