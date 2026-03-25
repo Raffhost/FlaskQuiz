@@ -112,7 +112,7 @@ class Question:
         question_type_id = cursor.fetchone()[0]
 
         # Insert q_text if it doesn't exist and q_type_id
-        cursor.execute('''INSERT OR IGNORE INTO question (question, question_type_id) 
+        cursor.execute('''INSERT INTO question (question, question_type_id) 
                        VALUES (?, ?);''', (q_text, question_type_id))
         
         # Get the question_id for next insertion
@@ -134,23 +134,17 @@ class Question:
                        FROM question INNER JOIN answer USING (question_id)
                        INNER JOIN question_type USING (question_type_id)
                        WHERE question_id = ?;''', (q_id,))
-        data = cursor.fetchall()
+        rows = cursor.fetchall()
 
-        if not data:
+        if not rows:
             return None
 
-        q_id = data[0][0]
-        q_text = data[0][1]
-        q_type = data[0][2]
-        answers = [row[3] for row in data]
-        is_correct = [row[4] for row in data]
-
         return Question(
-            question_id=q_id,
-            question_text=q_text,
-            question_type=q_type,
-            answers=answers,
-            is_correct=is_correct
+            question_id=rows[0][0],
+            question_text=rows[0][1],
+            question_type=rows[0][2],
+            answers=[row[3] for row in rows],
+            is_correct=[row[4] for row in rows]
         )
 
 
@@ -178,7 +172,21 @@ class Question:
         random_order = cursor.fetchall()
         
         return random_order
+    
+    def flaskQuiz(self, q_type_id):
+        # random_order = [q_id, q_text, q_type, answer, is_correct ]
+        random_order = self.createRandomOrder(q_type_id) 
 
+        if not random_order:
+            return None
+
+        questions = []
+        for (q_id,) in random_order:
+            question = self.getQuestionById(q_id)
+            if question:
+                questions.append(question)
+        
+        return questions
     
 
 def main(): # Create DB and load data
@@ -203,10 +211,27 @@ def test_2(): # Test for getQuestionByTypeId
     test_q = q.getQuestionsByTypeId(3)
     print(test_q)
 
+def test_3(): # Test for createRandomOrder
+    q = Question(db_name='questions.db')
+    test_q = q.createRandomOrder(4)
+    print(test_q)
+
+def test_4(): # Test for flaskQuiz
+    q = Question(db_name='questions.db')
+    test_q = q.flaskQuiz(3)
+    if test_q:
+        for question in test_q:
+            print(f"Question ID: {question.q_id}")
+            print(f"Text: {question.q_text}")
+            print(f"Type: {question.q_type}")
+            print(f"Answers: {question.answers}")
+            print(f"Correct: {question.is_correct}")
+        else:
+            print("Question not found")
 
 if __name__ == "__main__":
     main()
-    test_2()
+    test_4()
 
 
-### Need to add getQuestionByType and getRandomOrder or smth like that ###
+### Now need to connect flask with question.py and index.html and other stuff... I guess... ###
