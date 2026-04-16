@@ -1,49 +1,32 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Flask Quiz</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="/"><button class="btn-new-game">Neues Spiel</button></a>
+        <button class="btn-highscores">Highscores</button>
+    </header>
 
+    <main>
+        <p class="question">{{ question }}</p>
 
-    <head>
-        <meta charset="UTF-8">
-        <title>Flask Quiz</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
-
-
-    <body>
-        <div class = "background">
-            <header class = "header">
-                <div>
-                    <button class = "play-button" >Neues Spiel</button>
-                    <button class = "highscore-button" >Highscores</button>
-                </div>
-            </header>
-
-
-            <div class = "container">
-                <div class = "question-container">
-                    <p class = "question">Question</p>
-                </div>
-
-
-                <div class = "answer-container">
-                    <button class = "answer-button">Answer 1</button>
-                    <button class = "answer-button">Answer 2</button>
-                    <button class = "answer-button">Answer 3</button>
-                    <button class = "answer-button">Answer 4</button>
-                </div>
-
-
-                <div class = "points-container">
-                    <p class = "points-number">Points: 0</p>
-                </div>
-
-                
-                <div class = "result-container">
-                    <p class = "result-number">Question 1/10</p>
-                </div>
-            </div>
+        <div class="answers">
+            {% for answer, correct in answers %}
+            <form action="/answer" method="POST">
+                <input type="hidden" name="is_correct" value="{{ '1' if correct else '0' }}">
+                <button class="btn-answer" type="submit">{{ answer }}</button>
+            </form>
+            {% endfor %}
         </div>
-    </body>
 
-
+        <div class="stats">
+            <span>Points: {{ score }}</span>
+            <span>Question {{ current }}/{{ total }}</span>
+        </div>
+    </main>
+</body>
 </html>

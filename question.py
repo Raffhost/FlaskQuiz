@@ -138,14 +138,15 @@ class Question:
 
         if not rows:
             return None
+        
+        self.q_id=rows[0][0]
+        self.q_text=rows[0][1]
+        self.q_type=rows[0][2]
+        self.answers=[row[3] for row in rows]
+        self.is_correct=[row[4] == 'True' for row in rows]
+        self.current_index=q_id
 
-        return Question(
-            question_id=rows[0][0],
-            question_text=rows[0][1],
-            question_type=rows[0][2],
-            answers=[row[3] for row in rows],
-            is_correct=[row[4] for row in rows]
-        )
+        return self
 
 
     def getQuestionsByTypeId(self, q_type_id):
@@ -159,7 +160,7 @@ class Question:
 
         if not rows:
             return None
-
+        
         return "\n".join(f"{row[0]} {row[1]}" for row in rows)
         
     def createRandomOrder(self, q_type_id):
@@ -170,9 +171,25 @@ class Question:
                        WHERE question_type_id = ?
                        ORDER BY RANDOM();''', (q_type_id,))
         random_order = cursor.fetchall()
-        
+
         return random_order
-    
+
+    def getRandomQuestion(self, q_type_id):
+        self.connection = sqlite3.connect(self.db_name)
+        cursor = self.connection.cursor()
+
+        cursor.execute('''SELECT question_id FROM question
+                       WHERE question_type_id = ?
+                       ORDER BY RANDOM() LIMIT 1;''', (q_type_id,))
+        random_q_id = cursor.fetchone()
+
+        if not random_q_id:
+            return None
+
+        question = self.getQuestionById(random_q_id[0])
+  
+        return question
+
     def flaskQuiz(self, q_type_id):
         # random_order = [q_id, q_text, q_type, answer, is_correct ]
         random_order = self.createRandomOrder(q_type_id) 
@@ -182,7 +199,8 @@ class Question:
 
         questions = []
         for (q_id,) in random_order:
-            question = self.getQuestionById(q_id)
+            question = Question(db_name=self.db_name).getQuestionById(q_id)
+            
             if question:
                 questions.append(question)
         
@@ -229,9 +247,22 @@ def test_4(): # Test for flaskQuiz
         else:
             print("Question not found")
 
+def test_5(): # Test for getRandomQuestion
+    q = Question(db_name='questions.db')
+    q.getRandomQuestion(4)
+    
+    print(f"Question ID: {q.q_id}")
+    print(f"Text: {q.q_text}")
+    print(f"Type: {q.q_type}")
+    print(f"Answers: {q.answers}")
+    print(f"Correct: {q.is_correct}")
+
+
+
+
 if __name__ == "__main__":
     main()
-    test_4()
+    test_5()
 
 
-### Now need to connect flask with question.py and index.html and other stuff... I guess... ###
+### Finished flask, now need to do the choice thing for every question type and other stuff ###
